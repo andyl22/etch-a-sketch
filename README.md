@@ -1,1 +1,1 @@
-# etch-a-sketch
+# etch-a-sketchTo do: Add mouse capture during click and drag drawing. Potentially check on making the animate async since in larger tile scenarios, not all inputs are registed.Make it mobile friendly.

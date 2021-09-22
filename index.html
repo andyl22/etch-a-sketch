@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="index.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+</head>
+<body ondragstart="return false;" ondrop="return false;">
+    
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <header>
+        <h1>Etch a Sketch</h1>
+        <h2>Click and hold to draw, or double click to toggle drawing.</h2>
+    </header>
+    
+    <main>
+        <div id = "button-container">
+            <div id="slider-container">
+                <p id="slider-text">50x50</p>
+                <input type="range" min=10 max = 100 value=50 id="slider">
+            </div>
+            <button class="draw-buttons selected" id="black">Black</button>
+            <button class="draw-buttons" id="rainbow">Rainbow</button>
+            <button class="draw-buttons" id="eraser">Eraser</button>
+            <button class="draw-buttons" id="reset">Reset</button>
+        </div>
+        <div id="square-div-container"></div>
+    </main>
+</body>
+</html>
