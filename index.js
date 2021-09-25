@@ -1,13 +1,13 @@
 function setUpSquareListeners() {
     let squareDivs = document.querySelectorAll(".square-div");
-    squareDivs.forEach(squareDiv=>squareDiv.addEventListener("mousedown", () => {
-        squareDivs.forEach(squareDiv=>squareDiv.addEventListener("mouseover", animateOver))
+    squareDivs.forEach(squareDiv=>squareDiv.addEventListener("pointerdown", () => {
+        squareDivs.forEach(squareDiv=>squareDiv.addEventListener("pointerover", animateOver))
     }));
-    squareDivs.forEach(squareDiv=>squareDiv.addEventListener("mouseup", () => {
-        squareDivs.forEach(squareDiv=>squareDiv.removeEventListener("mouseover", animateOver))
+    squareDivs.forEach(squareDiv=>squareDiv.addEventListener("pointerup", () => {
+        squareDivs.forEach(squareDiv=>squareDiv.removeEventListener("pointerover", animateOver))
     }));
     squareDivs.forEach(squareDiv=>squareDiv.addEventListener("dblclick", () => {
-        squareDivs.forEach(squareDiv=>squareDiv.addEventListener("mouseover", animateOver))
+        squareDivs.forEach(squareDiv=>squareDiv.addEventListener("pointerover", animateOver))
     }));
     squareDivs.forEach(squareDiv=>squareDiv.addEventListener("touchmove", animateOver));
 }
