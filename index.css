@@ -83,7 +83,6 @@ button {
     }
     body {
         background: rgb(233 137 11);
-        display: inline;
         padding: 20px;
     }
     #square-div-container {
@@ -102,6 +101,19 @@ button {
     }
     #draw-types-container {
         display: flex;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    #square-div-container {
+        height: 300px;
+        width: 300px;
+    }
+    #draw-types-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         gap: 10px;
     }
 }
