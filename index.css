@@ -77,5 +77,32 @@ button {
     border: 2px solid;
 }
 
+@media (max-width: 800px) {
+    h1, h2 {
+        font-size: 18px;
+    }
+    body {
+        padding: 20px;
+    }
+    #square-div-container {
+        min-height: 80%;
+        min-width: 80%;
+        margin-bottom: 30px;
+    }
+    #button-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #reset {
+        margin: 0;
+    }
+    #draw-types-container {
+        display: flex;
+        gap: 10px;
+    }
+}
+
 
 
