@@ -85,8 +85,8 @@ button {
         padding: 20px;
     }
     #square-div-container {
-        min-height: 80%;
-        min-width: 80%;
+        max-height: 40%;
+        max-width: 50%;
         margin-bottom: 30px;
     }
     #button-container {
