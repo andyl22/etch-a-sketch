@@ -9,7 +9,6 @@ function setUpSquareListeners() {
     squareDivs.forEach(squareDiv=>squareDiv.addEventListener("dblclick", () => {
         squareDivs.forEach(squareDiv=>squareDiv.addEventListener("pointerover", animateOver))
     }));
-    squareDivs.forEach(squareDiv=>squareDiv.addEventListener("touchmove", animateOver));
 }
 
 function updateSliderInput() {
