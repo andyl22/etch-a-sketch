@@ -1,3 +1,17 @@
+function setUpSquareListeners() {
+    let squareDivs = document.querySelectorAll(".square-div");
+    squareDivs.forEach(squareDiv=>squareDiv.addEventListener("mousedown", () => {
+        squareDivs.forEach(squareDiv=>squareDiv.addEventListener("mouseover", animateOver))
+    }));
+    squareDivs.forEach(squareDiv=>squareDiv.addEventListener("mouseup", () => {
+        squareDivs.forEach(squareDiv=>squareDiv.removeEventListener("mouseover", animateOver))
+    }));
+    squareDivs.forEach(squareDiv=>squareDiv.addEventListener("dblclick", () => {
+        squareDivs.forEach(squareDiv=>squareDiv.addEventListener("mouseover", animateOver))
+    }));
+    squareDivs.forEach(squareDiv=>squareDiv.addEventListener("touchmove", animateOver));
+}
+
 function updateSliderInput() {
     let sliderText = document.getElementById("slider-text");
     sliderText.textContent = `${slider.value} x ${slider.value}`;
@@ -51,20 +65,6 @@ function reduceBrightness(e) {
 
 function generateRandomColor() {
     return Math.round(Math.random()*265);
-}
-
-
-function setUpSquareListeners() {
-    let squareDivs = document.querySelectorAll(".square-div");
-    squareDivs.forEach(squareDiv=>squareDiv.addEventListener("mousedown", () => {
-        squareDivs.forEach(squareDiv=>squareDiv.addEventListener("mouseover", animateOver))
-    }))
-    squareDivs.forEach(squareDiv=>squareDiv.addEventListener("mouseup", () => {
-        squareDivs.forEach(squareDiv=>squareDiv.removeEventListener("mouseover", animateOver))
-    }))
-    squareDivs.forEach(squareDiv=>squareDiv.addEventListener("dblclick", () => {
-        squareDivs.forEach(squareDiv=>squareDiv.addEventListener("mouseover", animateOver))
-    }))
 }
 
 function createSquareStyle(squareRatio) {
